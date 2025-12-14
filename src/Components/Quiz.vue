@@ -23,4 +23,8 @@ const questions = [
 
 <template>
 
+<h2>{{ questions[currentQuestionIndex].question }}</h2>
+
+<button v-for="option in questions[currentQuestionIndex].options" :key="option">{{ option }}</button>
+
 </template>
