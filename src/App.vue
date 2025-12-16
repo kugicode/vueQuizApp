@@ -1,5 +1,6 @@
 <script setup>
 import Quiz from './Components/Quiz.vue';
+
 </script>
 
 <template>

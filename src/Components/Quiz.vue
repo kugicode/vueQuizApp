@@ -29,6 +29,12 @@ const clicked = (option) => {
     currentQuestionIndex.value++;
 }
 
+const newClicked = () => {
+    console.log("You clicked the restart button");
+    currentQuestionIndex.value = 0;
+    score.value = 0;
+}
+
 </script>
 
 <template>
@@ -39,8 +45,10 @@ const clicked = (option) => {
 />
 </div>
 
+
 <div v-else>
 <h2>You got: {{ score }} / {{ questions.length }}</h2>
+<button v-on:click="newClicked">Restart</button>
 </div>
 
 </template>
