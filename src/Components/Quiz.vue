@@ -38,7 +38,9 @@ const newClicked = () => {
 </script>
 
 <template>
+
 <div v-if="currentQuestionIndex < questions.length">
+    <h4>Question: {{ currentQuestionIndex + 1 }} / {{ questions.length }}</h4>
 <Questions 
   :question="questions[currentQuestionIndex]" 
   @option-selected="clicked"                

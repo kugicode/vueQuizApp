@@ -6,7 +6,6 @@ import Quiz from './Components/Quiz.vue';
 <template>
 <h2> Quiz app </h2>
 
-
 <Quiz />
 </template>
 
